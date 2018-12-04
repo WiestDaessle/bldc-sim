@@ -63,7 +63,7 @@ class Simulator(object):
         self.Tc = simconstants.BEMF_CONSTANT * math.sin( self.theta - simconstants.DEG_240_RAD ) * self.ic
 
         # Electrical power
-        self.Pelec = self.bemfa * self.ia + self.bemfa * self.ib + self.bemfc * self.ic
+        self.Pelec = self.bemfa * self.ia + self.bemfb * self.ib + self.bemfc * self.ic
 
         # Electrical torque
         # Add torque of all phases
